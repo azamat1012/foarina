@@ -1,0 +1,133 @@
+@import url("https://fonts.cdnfonts.com/css/retro-new-version");
+
+body {
+  background-color: #ab88e3;
+}
+.first-slide {
+  display: grid;
+  place-items: center;
+  padding-top: 25%;
+  height: 4em;
+  color: white;
+  font-size: 20px;
+}
+.i1 {
+  width: 10px;
+  height: 10px;
+}
+.top-body {
+  position: relative;
+  z-index: 0;
+}
+.top-body img {
+  transition: transform 1s ease;
+}
+
+.top-body img {
+  animation: moveImages 4s infinite;
+}
+
+.inp {
+  display: grid;
+  place-items: center;
+  padding-top: 5%;
+
+  height: 2em;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(45deg) scale(1.2);
+  }
+  50% {
+    transform: translate(-10px, 10px) rotate(-90deg) scale(1.4);
+  }
+  75% {
+    transform: translate(5px, -5px) rotate(135deg) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg) scale(1);
+  }
+}
+
+/* .A {
+  margin: 5px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100vh;
+  font-size: 50vw;
+  border-color: none;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(247, 37, 50, 0.8);
+  background-color: #f7f7f7; /* Replace with the desired background color */
+
+.skip-btn {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 40px;
+}
+
+.letter-button {
+  margin-top: 0px;
+  color: white;
+  font-size: 40px;
+
+  font-family: "Retro New Version", sans-serif;
+  box-shadow: 0 0 20px lightyellow;
+  border: none;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    white,
+    black,
+    purple
+  ); /* Three-color background */
+  /* margin: 10px; */
+}
+
+@keyframes letter-button {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.letter-button {
+  animation: letter-button 2s infinite;
+}
+
+.row {
+  margin-top: 0;
+  justify-content: space-between; /* Distribute the divs along the row with space between them */
+}
+
+.row > div {
+  padding: 0px; /* Add padding to create distance between the divs */
+  border: 1px solid black; /* Add a border around the divs */
+}
+.row > div > button {
+  padding: 80px; /* Add padding to create distance between the divs */
+  border: 0px solid black; /* Add a border around the divs */
+  width: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}

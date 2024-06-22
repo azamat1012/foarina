@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+      grid-template-rows: repeat(4, 1fr); /* Create 4 rows */
+      gap: 10px; /* Add a gap between the elements */
+    }
+
+    .grid-item {
+      background-color: #ab88e3;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* Change to 2 columns on smaller screens */
+        grid-template-rows: repeat(
+          8,
+          1fr
+        ); /* Increase to 8 rows on smaller screens */
+      }
+    }
+    .grid-container {
+      position: relative;
+      border: 1px solid gray;
+      width: 300px;
+      height: 300px;
+    }
+    .container:hover {
+      .below-div {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .add-btn {
+        visibility: visible;
+      }
+
+      .add-btn:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    .bag-img {
+      width: 300px;
+      height: 500px;
+    }
+    .discount {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      font-family: "Times New Roman";
+    }
+    .below-div {
+      border: 1px solid black;
+      position: absolute;
+      bottom: 0;
+      top: 220px;
+      right: 0;
+      left: 0;
+      background-color: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .add-btn {
+      visibility: hidden;
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid gray;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i1.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i2.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i3.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i4.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i5.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i6.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i7.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i8.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i9.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i10.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i11.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i12.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i13.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i14.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i15.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i16.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i17.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i18.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i19.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i20.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i21.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i22.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i23.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+      <div class="grid-item">
+        <img class="bag-img" src="/newImg/i24.jpg" alt="" />
+
+        <div class="below-div">beauty</div>
+      </div>
+    </div>
+  </body>
+</html>

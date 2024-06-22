@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #ab88e3;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Create 4 columns */
+      grid-template-rows: repeat(1, 1fr); /* Create 4 rows */
+      gap: 10px; /* Add a gap between the elements */
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(
+          1,
+          1fr
+        ); /* Change to 2 columns on smaller screens */
+        grid-template-rows: repeat(
+          8,
+          1fr
+        ); /* Increase to 8 rows on smaller screens */
+      }
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="oe" onclick="one()">Твои любимые песни</div>
+      <div class="js-dish grid-item" onclick="one1()">Твое любимое блюдо</div>
+      <div class="js-city grid-item" onclick="one2()">Твое любимое место</div>
+    </div>
+
+    <script>
+      function one() {
+        window.open(
+          "https://vk.com/audio_playlist197702537_140_b2ed02944815ce315b",
+          "_blank"
+        ); // Open the new page in a new window
+      }
+      function one1() {
+        document.getElementById("oe").style.width = "100%";
+        document.getElementById("oe").style.height = "20px";
+        document.getElementById("oe").style.marginBottom = "0";
+
+        document.querySelector(
+          ".js-dish"
+        ).innerHTML = `<img src="dis.jpg" alt="">`;
+      }
+      function one2() {
+        document.querySelector(
+          ".js-city"
+        ).innerHTML = `<img src="par.jpg" alt="">`;
+      }
+    </script>
+  </body>
+</html>
