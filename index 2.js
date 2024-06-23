@@ -125,15 +125,15 @@ function next1() {
   padding: 0; /* Set padding to 0 to decrease space */
   flex-wrap: wrap; /* Allow the items to wrap as needed */
 ">
-  <img class="i1" src="images/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;"  />
-  <img class="i2" src="images/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i3" src="images/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i4" src="images/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i5" src="images/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i6" src="images/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i7" src="images/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i8" src="images/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
-  <img class="i9" src="images/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i1" src="images 2/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;"  />
+  <img class="i2" src="images 2/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i3" src="images 2/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i4" src="images 2/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i5" src="images 2/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i6" src="images 2/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i7" src="images 2/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i8" src="images 2/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i9" src="images 2/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
 </div>`;
 
   // document.getElementById("top-body").style.width = "10px";
