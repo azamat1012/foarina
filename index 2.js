@@ -125,15 +125,15 @@ function next1() {
   padding: 0; /* Set padding to 0 to decrease space */
   "
   >
-    <img class="i1" src="images/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:20px"  />
-    <img class="i2" src="images/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:90px "/>
-    <img class="i3" src="images/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:0px ">
-    <img class="i4" src="images/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 25px"  />
-    <img class="i5" src="images/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 40px"  />
-    <img class="i6" src="images/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i7" src="images/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i8" src="images/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i9" src="images/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
+    <img class="i1" src="images 2/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:20px"  />
+    <img class="i2" src="images 2/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:90px "/>
+    <img class="i3" src="images 2/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:0px ">
+    <img class="i4" src="images 2/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 25px"  />
+    <img class="i5" src="images 2/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 40px"  />
+    <img class="i6" src="images 2/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
+    <img class="i7" src="images 2/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
+    <img class="i8" src="images 2/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
+    <img class="i9" src="images 2/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
     
   </div>`;
   // document.getElementById("top-body").style.width = "10px";
@@ -171,7 +171,7 @@ function next2() {
 
   <h3 style="margin-top: 0; text-align: center"></h3>
   `;
-  document.getElementById("first-slide").style.paddingTop = "25%";
+  document.getElementById("first-slide").style.paddingTop = "5%";
   setTimeout(() => {
     document.getElementById("first-slide").innerHTML = `
     <div style="margin-top:0; margin-button: 20px">
@@ -225,14 +225,14 @@ function next4() {
 }
 
 function redirectToNewPagePhoto() {
-  window.open("photo.html", "_blank"); // Open the new page in a new window
+  window.open("photo 2.html", "_blank"); // Open the new page in a new window
 }
 
 function redirectToNewPageLove() {
-  window.open("lovely.html", "_blank"); // Open the new page in a new window
+  window.open("lovely 2.html", "_blank"); // Open the new page in a new window
 }
 function redirectToNewPageYou() {
-  window.open("you.html", "_blank"); // Open the new page in a new window
+  window.open("you 2.html", "_blank"); // Open the new page in a new window
 }
 
 function wordGeneration1() {
