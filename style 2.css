@@ -72,6 +72,7 @@ body {
   right: 0;
   width: 100px;
   height: 40px;
+  top: 20%;
 }
 
 .letter-button {
@@ -97,21 +98,9 @@ body {
   /* margin: 10px; */
 }
 
-@keyframes letter-button {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.letter-button {
-  animation: letter-button 2s infinite;
-}
+/* .letter-button {
+  animation: move-chaotic 2s infinite;
+} */
 
 .row {
   margin-top: 0;
@@ -130,4 +119,11 @@ body {
   display: flex;
   justify-content: center;
   font-weight: bolder;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
 }
