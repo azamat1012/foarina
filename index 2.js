@@ -116,26 +116,26 @@ function next() {
 }
 function next1() {
   document.querySelector(".top-body").innerHTML = `
-  <div style="
+<div style="
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 9em;
+  height: 100px; /* Adjust the height for better fit on mobile devices */
   margin: 0; /* Set margin to 0 to decrease space */
   padding: 0; /* Set padding to 0 to decrease space */
-  "
-  >
-    <img class="i1" src="images 2/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:20px"  />
-    <img class="i2" src="images 2/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:90px "/>
-    <img class="i3" src="images 2/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top:0px ">
-    <img class="i4" src="images 2/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 25px"  />
-    <img class="i5" src="images 2/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-top: 40px"  />
-    <img class="i6" src="images 2/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i7" src="images 2/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i8" src="images 2/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    <img class="i9" src="images 2/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow;"  />
-    
-  </div>`;
+  flex-wrap: wrap; /* Allow the items to wrap as needed */
+">
+  <img class="i1" src="images/img1.png" alt="Star Image 1" style="width: 60px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;"  />
+  <img class="i2" src="images/img2.png" alt="Star Image 2" style="width: 25px; height: 50px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i3" src="images/img3.png" alt="Star Image 3" style="width: 25px; height: 25px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i4" src="images/img4.png" alt="Star Image 4" style="width: 67px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i5" src="images/img5.png" alt="Star Image 5" style="width: 90px; height: 80px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i6" src="images/img6.png" alt="Star Image 6" style="width: 80px; height: 90px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i7" src="images/img7.png" alt="Star Image 7" style="width: 70px; height: 70px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i8" src="images/img8.png" alt="Star Image 8" style="width: 30px; height: 30px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+  <img class="i9" src="images/img9.png" alt="Star Image 9" style="width: 40px; height: 40px; border:none; box-shadow: 0px 0px 6px light-yellow; margin-right:10px; margin-bottom: 10px;" />
+</div>`;
+
   // document.getElementById("top-body").style.width = "10px";
 
   document.getElementById("first-slide").innerHTML = `
@@ -144,6 +144,8 @@ function next1() {
     <h3 style="margin-top: 0; padding-top: 0%">Арин, пожалуйста, будь  внимательна</h3>
     `;
   document.getElementById("first-slide").style.paddingTop = "10%";
+  document.getElementById("inp").style.marginTop = "10%";
+
   document.querySelector(".inp").innerHTML = `
     <input type="text" id="answerInput" style="margin-top: 30px">
     <button id="next-btn" onclick="checkAnswer()">Проверить</button>
@@ -167,24 +169,22 @@ function next2() {
   document.querySelector(".top-body").innerHTML = "";
   document.getElementById("first-slide").innerHTML = `
     
-  <h3 style="margin-bottom: 0; text-align: center">Я думал над твоим именнем и составил немного прилагаельных слов</h3>
+  <h3 style="margin-bottom: 0; text-align: center">Я думал над твоим именем и составил немного прилагательных слов</h3>
 
   <h3 style="margin-top: 0; text-align: center"></h3>
   `;
   document.getElementById("first-slide").style.paddingTop = "5%";
   setTimeout(() => {
     document.getElementById("first-slide").innerHTML = `
-    <div style="margin-top:0; margin-button: 20px">
-        <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration1()">A</button>
-        <button class="letter-button R" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration2()">P</button>
-        <button class="letter-button I" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration3()">N</button>
-        <button class="letter-button N" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration4()">H</button>
-        <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration5()">A</button>
-
-    </div>
-    <button class="skip-btn" onclick="next3()">SKIP</button>
-
-    `;
+     <div>
+      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration1()">A</button>
+      <button class="letter-button R" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration2()">P</button>
+      <button class="letter-button I" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration3()">N</button>
+      <button class="letter-button N" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration4()">H</button>
+      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration5()">A</button>
+  </div>
+  <button class="skip-btn" onclick="next3()">SKIP</button>
+  `;
   }, 7000); // Timeout set to 5 seconds (5000 milliseconds)
 }
 let count = 0; // Initialize the counter
@@ -200,7 +200,7 @@ function slowCount() {
 
 function next3() {
   document.getElementById("first-slide").innerHTML = `
-  Счетчик того, сколько раз я думаю тебе в настоящее время:
+  Счетчик того, сколько раз я думаю о тебе в настоящее время:
   <div id="counter" style="margin-bottom: 150px; font-size:100px" >0</div> <!-- Display the counter -->
 
 
@@ -225,15 +225,39 @@ function next4() {
 }
 
 function redirectToNewPagePhoto() {
-  window.open("photo 2.html", "_blank"); // Open the new page in a new window
+  (window.location.href = "photo 2.html"), "_blank"; // Open the new page in a new window
+  document.querySelector(".first-slide")=`
+  <button class="back-btn" onclick="back()">Back</button>
+  `
+  document.querySelector(".first-slide")=`
+  <button class="back-btn" onclick="back()">Back</button>
+  `
 }
 
 function redirectToNewPageLove() {
-  window.open("lovely 2.html", "_blank"); // Open the new page in a new window
+  (window.location.href = "lovely 2.html"), "_blank"; // Open the new page in a new window
+  document.querySelector(".first-slide")=`
+  <button class="back-btn" onclick="back()">Back</button>
+  `
 }
 function redirectToNewPageYou() {
-  window.open("you 2.html", "_blank"); // Open the new page in a new window
+  (window.location.href = "you 2.html"), "_blank"; // Open the new page in a new window
+  document.querySelector(".first-slide")=`
+  <button class="back-btn" onclick="back()">Back</button>
+  `
 }
+
+
+function back(){
+  document.querySelector(".first-slide").innerHTML=`
+  <div class="row">
+      <div><button style="background-color:black;color: white;" onclick="redirectToNewPagePhoto()">Библиотека фотографий</button></div>
+      <div><button onclick="redirectToNewPageLove()">Любимые...</button></div>
+      <div><button style="background-color:#db0dc7;color: white;"onclick="redirectToNewPageYou()">Ты</button></div>
+    </div>
+  `
+}
+
 
 function wordGeneration1() {
   const randomIndex = Math.floor(Math.random() * a1.length);
@@ -419,15 +443,22 @@ function getRandomVerticalPosition() {
 function render() {
   document.getElementById("first-slide").innerHTML = `
   <div>
-      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration1()">A</button>
-      <button class="letter-button R" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration2()">P</button>
-      <button class="letter-button I" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration3()">N</button>
-      <button class="letter-button N" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration4()">H</button>
-      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px;" onclick="wordGeneration5()">A</button>
-
-
+      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration1()">A</button>
+      <button class="letter-button R" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration2()">P</button>
+      <button class="letter-button I" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration3()">N</button>
+      <button class="letter-button N" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration4()">H</button>
+      <button class="letter-button A" style="top: ${getRandomVerticalPosition()}px; left: ${getRandomHorizontalPosition()}px;" onclick="wordGeneration5()">A</button>
   </div>
   <button class="skip-btn" onclick="next3()">SKIP</button>
-
   `;
+}
+
+function getRandomVerticalPosition() {
+  // Return a random vertical position for the buttons
+  return Math.floor(Math.random() * window.innerHeight);
+}
+
+function getRandomHorizontalPosition() {
+  // Return a random horizontal position for the buttons
+  return Math.floor(Math.random() * window.innerWidth);
 }
